@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty salon-termíny rezervací</title>
+        <link rel="stylesheet" href="{% static 'reservation/style.css' %}">
+
+    </head>
+
+    <body>
+        <div class="row">
+            
+            <form method = "GET" class="contact-form">
+                <a class="logout" href="/beauty-salon/logout/">Odhlásit</a>
+                <div class="heading-main">
+                    <h2>Termíny rezervací</h2>
+                </div>
+ 
+                {% for one_reservation in list_of_all_reservations %}
+                <table>
+                    <tr>
+                        <td>{{ one_reservation.subject }}</td>
+                        <td>{{ one_reservation.user_name }}</td>
+                        <td>{{ one_reservation.user_email }}</td>
+                        <td>{{ one_reservation.user_mobile }}</td>
+                        <td>{{ one_reservation.date }}</td>
+                        <td>{{ one_reservation.time }}</td>
+                        <td><a href="delete/{{ one_reservation.id }}">zamítnout</a></td>
+                    </tr>
+                {% endfor %}
+                </table>
+            </form>
+        </div>
+    
+    </body>
+</html> 

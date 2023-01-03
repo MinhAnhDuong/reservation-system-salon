@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty salon</title>
+        <link rel="stylesheet" href="{% static 'beautysalon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'beautysalon/queries.css' %}">
+        <link rel="stylesheet" href="{% static 'beautysalon/other/grid.css' %}">
+        <link rel="stylesheet" href="{% static 'beautysalon/lightbox.min.css' %}">
+        <script src="{% static 'beautysalon/lightbox-plus-jquery.min.js' %}"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="{% static 'beautysalon/script.js' %}"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-background"></div>
+
+            <div class="nav-bar row">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="jq--scroll-about-salon">O nás</a></li>
+                        <li><a href="#"class="jq--scroll-about-services">Služby</a></li>
+                        <li><a href="#"class="jq--scroll-references">Reference</a></li>
+                        <li><a href="#"class="jq--scroll-photogallery">Fotogalerie</a></li>
+                        <li><a href="#"class="jq--scroll-contacts">Kontakt</a></li>
+                    </ul>
+
+                    <div class="mobile-nav-back"></div>
+                    <a class="mobile-nav-icon jq--nav-icon"><img class="jq--image-hamburger" src="{% static 'beautysalon/images/hamburgerMenu.png' %}" alt=""></a>
+
+                </nav>
+            </div>
+
+
+            <div class="header-text">
+                <h1>BEAUTY DELUXE PRAGUE CLINIC</h1>
+                <a href="{% url 'basicinfo' %}" class="btn btn-full">ON-LINE REZERVACE</a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="about-us row jq--about-salon">
+                <div class="empty-space"></div>
+
+                <div class="heading-main">
+                    <h2>O nás</h2>
+                </div>
+
+                <div class="our-salon">
+
+                    <li class="col span-1-of-2 salon-photo">
+                        <img src="{% static 'beautysalon/images/about_us.jpeg' %}" alt="">
+                    </li>
+
+                    <li class="col span-1-of-2 salon-photo">
+                        <img src="{% static 'beautysalon/images/salon.jpg' %}" alt="">
+                    </li>
+
+                </div>
+
+            </section>
+
+            <section class="our-services row jq--about-services">
+                <div class="empty-space"></div>
+
+                <div class="heading-main">
+                    <h2>Naše služby</h2>
+                </div>
+
+                <div class="services">
+                    <div class="col span-1-of-4 one-service brows">
+                        <img src="{% static 'beautysalon/images/microblading-services.jpg' %}" alt="">
+                        <p>MICROPIGMENTACE OBOČÍ</p>
+                    </div>
+                    
+                    <div class="col span-1-of-4 one-service lips">
+                        <img src="{% static 'beautysalon/images/lip-services.jpg' %}" alt="">
+                        <p>PERMANENTNÍ MAKE-UP RTŮ</p>
+                    </div>
+
+                    <div class="col span-1-of-4 one-service lash-lifting">
+                        <img src="{% static 'beautysalon/images/lash-services.jpg' %}" alt="">
+                        <p>laminace řas</p>
+                    </div>
+
+                    <div class="col span-1-of-4 one-service lash-extension">
+                        <img src="{% static 'beautysalon/images/lash-extension-services.jpeg' %}" alt="">
+                        <p>Prodlužování řas</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="reference jq--references">
+                <div class="empty-space"></div>
+                <div class="heading-main">
+                    <h2>Co o nás řekli naši zákazníci</h2>
+                </div>
+                
+                <div class="customer-reference row">
+                    <div class="col span-1-of-3 one-reference">
+                        <div class="photo-name">
+                            <h3>Jane Brown</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel risus rutrum lobortis vel non eros. Cras varius eros aliquam, finibus nisl nec, malesuada eros. Ut pulvinar ante nisl, eget dictum mi tincidunt non. </p>
+                    </div>
+
+                    <div class="col span-1-of-3 one-reference">
+                        <div class="photo-name">
+                            <h3>Minh Anh Duongova</h3>
+                        </div>
+                        <p>Nunc eget enim metus. Proin fermentum auctor pretium. Nulla ac pharetra elit. Praesent quis ullamcorper sem. Curabitur interdum, tellus eget viverra eleifend, lorem quam viverra sapien.</p>
+                    </div>
+
+                    <div class="col span-1-of-3 one-reference">
+                        <div class="photo-name">
+                            <h3>Hana Zhan</h3>
+                        </div>
+                        <p>Curabitur bibendum risus quis eros accumsan, et sagittis quam pellentesque. Mauris turpis lacus, convallis quis risus sed, fermentum aliquet velit. </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photo-gallery jq--photogallery">
+                <div class="empty-space"></div>
+                <div class="heading-main">
+                    <h2>Fotogalerie</h2>
+                </div>
+
+                <div class="photos row">
+                    <ul class="photo-segment">
+                        <li class="col span-1-of-2">
+                            <a href="{% static 'beautysalon/images/Microblading.png' %}" data-lightbox="mygallery" data-title="brow microblading - mikropigmentace obočí">
+                                <img src="{% static 'beautysalon/images/Microblading.png' %}" alt="">
+                            </a>
+                        </li>
+
+                        <li class="col span-1-of-2">
+                            <a href="{% static 'beautysalon/images/lips.jpg' %}" data-lightbox="mygallery" data-title="permanentní make-up rtů">
+                                <img src="{% static 'beautysalon/images/lips.jpg' %}" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="photo-segment">
+                        <li class="col span-1-of-2">
+                            <a href="{% static 'beautysalon/images/brows.jpg' %}" data-lightbox="mygallery" data-title="brow microblading - mikropigmentace obočí">
+                                <img src="{% static 'beautysalon/images/brows.jpg' %}" alt="">
+                            </a>
+                        </li>
+
+                        <li class="col span-1-of-2">
+                            <a href="{% static 'beautysalon/images/lash.jpg' %}" data-lightbox="mygallery" data-title="lash lifting - laminace řas">
+                                <img src="{% static 'beautysalon/images/lash.jpg' %}" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="photo-segment">
+                        <li class="col span-1-of-2">
+                            <a href="{% static 'beautysalon/images/pmu_lip.jpg' %}" data-lightbox="mygallery" data-title="permanentní make-up rtů">
+                                <img src="{% static 'beautysalon/images/pmu_lip.jpg' %}" alt="">
+                            </a>
+                        </li>
+
+                        <li class="col span-1-of-2">
+                            <a href="{% static 'beautysalon/images/lash-extensions.jpg' %}" data-lightbox="mygallery" data-title="prodlužování řas">
+                                <img src="{% static 'beautysalon/images/lash-extensions.jpg' %}" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section class="jq--contacts">
+                <div class="empty-space"></div>
+                <div class="heading-main">
+                    <h2>Kontaktujte nás</h2>
+                </div>
+
+                <form action="{% url 'email_save_contact_form' %}" class="contact-form row" method="post">
+                    {% csrf_token %}
+                    {{ form.name }}
+                    {{ form.email }}
+                    {{ form.message }}
+                    <input type="submit" value="Odeslat">
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer-page">
+            <div class="row">
+                <div class="social">
+                    <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                </div>
+
+                <div class="footer-text">
+                    Copywrite &copy; 2022 Beauty Deluxe Prague Clinic. Vsechna prava vyhrazena. 
+                </div>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>

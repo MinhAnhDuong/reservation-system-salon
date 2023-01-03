@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty salon-rezervační formulář</title>
+        <link rel="stylesheet" href="{% static 'reservation/style.css' %}">
+    </head>
+
+    <body>
+        <div class="row">
+
+            <form method = "POST" action={% url 'selecttime' %} class="contact-form">
+                <div class="heading-main">
+                    <h2>Vyberte prosím termín</h2>
+                </div>
+                {% csrf_token %}
+                {{ form.date }}
+                <div class="contact-form-filed">
+                    <div class="heading-main">
+                        <h2>REKAPITULACE</h2>
+                    </div>
+                    {{ basic_info_form  }}
+                </div>
+                <input type="submit" value="další">
+            </form>
+        </div>
+    
+    </body>
+</html>

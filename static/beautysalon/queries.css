@@ -1,0 +1,132 @@
+
+@media only screen and (max-width: 1150px){
+
+    /***Photo gallery***/
+
+    .photo-segment{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /***Reference***/
+
+    .col.span-1-of-3.one-reference {
+        width: 48%;
+        margin-left: 1.5%;
+    }
+    .one-reference:nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1025px){
+    /*Burger menu*/
+    nav ul li {
+        display: block;
+    }
+
+    .mobile-nav-back {
+        height: 140px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        border-bottom: 2px solid #fff;
+        display: none;
+        z-index: 100;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    }
+
+    nav ul {
+        display: none;
+        z-index: 300;
+    }
+
+    .btn-full:hover,
+    .btn-full:active {
+    transition: background 0.5s;
+    background: #a93d00;
+    border: 1px solid transparent;
+    }
+}
+
+@media only screen and (max-width: 920px){
+    
+    .header-text h1 {
+        font-size: 20px;
+    }
+    .header-text a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    
+    /***Photo gallery***/
+
+    .photo-segment .col {
+        margin-left: 0;
+    }
+
+    .photo-segment li {
+        width: 100%;
+    }
+
+    .col.span-1-of-4.one-service {
+        width: 45%;
+        margin-left: 1.5%;
+    }
+
+    .col.span-1-of-4.one-service p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 730px) {
+    /***Header***/
+
+    .header-text {
+        width: 100%;
+        left: 0%;
+        transform: translate(0%,0%);
+    }
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .btn-empty:link,
+    .btn-empty:visited {
+    margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+
+    /***Reference***/
+
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
+
+    .photo-name {
+        float: right;
+        margin-right: 20px;
+    }
+}

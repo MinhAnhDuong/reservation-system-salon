@@ -1,0 +1,112 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.row {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-main h2 {
+    text-align: center;
+    font-family: raleway;
+    font-size: 20px;
+    color: #B79541;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: initial;
+    margin-bottom: 20px;
+    margin-top: -25px;
+}
+
+.contact-form {
+    max-width: 800px;
+    border: #605f5f solid 1px;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.contact-form-filed {
+    max-width: 800px;
+    border: #605f5f solid 1px;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.contact-form input {
+    width: 97%;
+    margin: 10px 0px;
+    padding: 10px;
+    border: #605f5f solid 1px;
+    border-radius: 5px;
+    font-family: raleway;
+}
+
+.contact-form-filed input {
+    width: 99%;
+    margin: 10px 0px;
+    padding-top: 10px;
+    border: #605f5f solid 1px;
+    border-radius: 5px;
+    font-family: raleway;
+    margin-top: 20px    ;
+}
+
+.contact-form textarea {
+    width: 50%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: #605f5f solid 1px;
+    border-radius: 5px;
+    font-family: raleway;
+}
+
+.form-control {
+    font-size: 13px;
+    width: 102%;
+    height: 40%;
+    padding: 10px;
+    border: #605f5f solid 1px;
+    border-radius: 5px;
+    font-family: raleway;
+}
+
+.form-control-time {
+    font-size: 13px;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: #605f5f solid 1px;
+    border-radius: 5px;
+    font-family: raleway;
+}
+
+input[type="submit"] {
+    background-color: #D7B462;
+    font-family: Arial;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    transition: background-color 0.5s;
+    background-color: #846925;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.logout {
+    font-size: 18px;
+    font-family: raleway;
+    color: #B79541;
+    letter-spacing: 1px;
+    font-weight: initial;
+}
+
