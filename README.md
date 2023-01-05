@@ -17,7 +17,9 @@ Launch the app to preview
 $ python manage.py migrate
 
 $ python manage.py runserver
-- Visit: [beauty-salon] http://127.0.0.1:8000/beauty-salon/
+
+- Visit main page: [beauty-salon] http://127.0.0.1:8000/beauty-salon/
+- visit booking page: [beauty-salon/reservation/] http://127.0.0.1:8000/beauty-salon/reservation/
 
 
 ## App preview
