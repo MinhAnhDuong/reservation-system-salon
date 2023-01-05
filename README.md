@@ -15,6 +15,7 @@ Launch the app to preview
 - Start the Django development server from the project root.
 
 $ python manage.py migrate
+
 $ python manage.py runserver
 - Visit: [beauty-salon](127.0.0.1:8000/beauty-salon/) 
 
