@@ -21,7 +21,7 @@ $ python manage.py runserver
 
 
 ## App preview
-- booking page (time 14:00 is not available, is already booked)
+- booking page (time 14:00 on 12.01.2023 is not available, is already booked)
  ![](screenshots/reserve.png)
 - list of reservations for logged-in users
  ![](screenshots/reservationslist.png)
